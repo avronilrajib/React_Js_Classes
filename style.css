@@ -1,0 +1,38 @@
+.Header{
+    background: #1772b2;
+}
+.logoSection{
+   text-align: center;
+}
+.logoSection input{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  background: #b8b7b7;
+}
+.iconlogo{
+    font-size: 40px;
+}
+.menuSection{}
+.menuSection ul{
+    list-style-type: none;
+}
+.menuSection ul li{
+   display: inline-block;
+}
+.menuSection ul li a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0px 40px 0px 0px;
+    color: black;
+}
+.profileIcon{
+    text-align: center;
+}
+.profileIcon span{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+}
