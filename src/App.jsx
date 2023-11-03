@@ -9,6 +9,7 @@ import EventClass from "./componants/EVENT_HANDER/EventClass";
 import UseStateHook from "./componants/useState_hook/useStateHook";
 import Previous_state from "./componants/previous state/Previous_state";
 import EventBubbling from "./componants/Event_Bubbling/EventBubbling";
+import CollectForm from "./componants/Collect_form_data/CollectForm";
 function App() {
   return (
     <div>
@@ -17,9 +18,11 @@ function App() {
       <State /> */}
       {/* <Rendering />
       <EventClass /> */}
+      {/* <Icon />
       <UseStateHook />
       <Previous_state />
-      <EventBubbling />
+      <EventBubbling /> */}
+      <CollectForm />
     </div>
   );
 }
