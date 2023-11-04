@@ -37,6 +37,7 @@ export default function CollectForm() {
           <input
             onChange={handleEmailChange}
             type="email"
+            name="email"
             value={email}
             className="form-control"
             id="exampleInputEmail1"
@@ -50,6 +51,7 @@ export default function CollectForm() {
             onChange={handlePasswordChange}
             value={password}
             type="password"
+            name="password"
             className="form-control"
             id="exampleInputPassword1"
             placeholder="Password"

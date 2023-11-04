@@ -10,6 +10,7 @@ import UseStateHook from "./componants/useState_hook/useStateHook";
 import Previous_state from "./componants/previous state/Previous_state";
 import EventBubbling from "./componants/Event_Bubbling/EventBubbling";
 import CollectForm from "./componants/Collect_form_data/CollectForm";
+import StateObject from "./componants/UseSatate_with_Object/StateObject";
 function App() {
   return (
     <div>
@@ -22,7 +23,8 @@ function App() {
       <UseStateHook />
       <Previous_state />
       <EventBubbling /> */}
-      <CollectForm />
+      {/* <CollectForm /> */}
+      <StateObject />
     </div>
   );
 }
