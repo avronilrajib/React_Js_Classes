@@ -1,25 +1,16 @@
 import React, { useState } from "react";
 
 export default function StateObject() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({ email: "", password: "" });
+  const { email, password } = user;
 
-  const handleEc = (event) => {
-    setEmail(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handlePc = (event) => {
-    setPassword(event.target.value);
-    console.log(event.target.value);
-  };
   const handleSub = (event) => {
-    let info = {
-      email,
-      password,
-    };
-    console.log(info);
+    console.log(user);
     event.preventDefault();
+  };
+
+  const handleChange = (event) => {
+    setUser({ ...user, [event.target.name]: event.target.value });
   };
 
   return (
@@ -34,7 +25,7 @@ export default function StateObject() {
             className="form-control"
             name="email"
             value={email}
-            onChange={handleEc}
+            onChange={handleChange}
             aria-describedby="emailHelpId"
             placeholder="abc@mail.com"
           />
@@ -47,7 +38,7 @@ export default function StateObject() {
               className="form-control"
               name="password"
               value={password}
-              onChange={handlePc}
+              onChange={handleChange}
               placeholder="abxd@1234"
             />
           </div>

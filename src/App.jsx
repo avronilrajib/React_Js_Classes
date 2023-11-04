@@ -11,7 +11,12 @@ import Previous_state from "./componants/previous state/Previous_state";
 import EventBubbling from "./componants/Event_Bubbling/EventBubbling";
 import CollectForm from "./componants/Collect_form_data/CollectForm";
 import StateObject from "./componants/UseSatate_with_Object/StateObject";
+import Child from "./componants/STATE_LIFTING/Child";
+
 function App() {
+  const receivedData = (chidData) => {
+    console.log(chidData);
+  };
   return (
     <div>
       {/* <Card title="Rajib" desc="This is rajib" /> */}
@@ -25,6 +30,7 @@ function App() {
       <EventBubbling /> */}
       {/* <CollectForm /> */}
       <StateObject />
+      <Child onChildData={receivedData} />
     </div>
   );
 }
