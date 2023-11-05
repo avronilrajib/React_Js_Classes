@@ -12,6 +12,7 @@ import EventBubbling from "./componants/Event_Bubbling/EventBubbling";
 import CollectForm from "./componants/Collect_form_data/CollectForm";
 import StateObject from "./componants/UseSatate_with_Object/StateObject";
 import Child from "./componants/STATE_LIFTING/Child";
+import Home from "./componants/state_lifting_principle/Home";
 
 function App() {
   const receivedData = (chidData) => {
@@ -29,8 +30,9 @@ function App() {
       <Previous_state />
       <EventBubbling /> */}
       {/* <CollectForm /> */}
-      <StateObject />
-      <Child onChildData={receivedData} />
+      {/* <StateObject />
+      <Child onChildData={receivedData} /> */}
+      <Home />
     </div>
   );
 }
