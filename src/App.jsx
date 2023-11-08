@@ -13,6 +13,7 @@ import CollectForm from "./componants/Collect_form_data/CollectForm";
 import StateObject from "./componants/UseSatate_with_Object/StateObject";
 import Child from "./componants/STATE_LIFTING/Child";
 import Home from "./componants/state_lifting_principle/Home";
+import Formik from "./componants/formik_package/Formik";
 
 function App() {
   const receivedData = (chidData) => {
@@ -32,7 +33,8 @@ function App() {
       {/* <CollectForm /> */}
       {/* <StateObject />
       <Child onChildData={receivedData} /> */}
-      <Home />
+      {/* <Home /> */}
+      <Formik />
     </div>
   );
 }
