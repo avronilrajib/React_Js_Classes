@@ -14,6 +14,7 @@ import StateObject from "./componants/UseSatate_with_Object/StateObject";
 import Child from "./componants/STATE_LIFTING/Child";
 import Home from "./componants/state_lifting_principle/Home";
 import Formik from "./componants/formik_package/Formik";
+import YupFormik from "./componants/formik_package/YupFormik";
 
 function App() {
   const receivedData = (chidData) => {
@@ -35,6 +36,7 @@ function App() {
       <Child onChildData={receivedData} /> */}
       {/* <Home /> */}
       <Formik />
+      <YupFormik />
     </div>
   );
 }
