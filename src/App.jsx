@@ -35,7 +35,7 @@ function App() {
       {/* <StateObject />
       <Child onChildData={receivedData} /> */}
       {/* <Home /> */}
-      <Formik />
+      {/* <Formik /> */}
       <YupFormik />
     </div>
   );

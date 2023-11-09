@@ -5,10 +5,12 @@ import * as Yup from "yup";
 function YupFormik() {
   const formik = useFormik({
     initialValues: {
+      name: "",
       email: "",
       password: "",
     },
     validationSchema: Yup.object({
+      name: Yup.string().min(6, "name must have 8 char").required(),
       email: Yup.string().email().required(),
       password: Yup.string()
         .min(8, "password must have atleast 8 char")
@@ -19,8 +21,12 @@ function YupFormik() {
       resetForm({ values: "" });
     },
   });
-  console.error(formik.errors.email);
-  console.error(formik.errors.password);
+  //   console.log(formik.errors.email);
+  //   console.log(formik.errors.password);
+  //   console.log(formik.errors.name);
+  const nameError = formik.touched.name && formik.errors.name && (
+    <span style={{ color: "red" }}>{formik.errors.name}</span>
+  );
   const emailError = formik.touched.email && formik.errors.email && (
     <span style={{ color: "red" }}>{formik.errors.email}</span>
   );
@@ -31,6 +37,18 @@ function YupFormik() {
     <div>
       <section>
         <form action="" onSubmit={formik.handleSubmit}>
+          <h1> login Form...</h1>
+          <div>
+            <label htmlFor="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              onChange={formik.handleChange}
+              value={formik.values.name}
+            />
+          </div>
+          {nameError}
           <div>
             <label htmlFor="email">Email: </label>
             <input
