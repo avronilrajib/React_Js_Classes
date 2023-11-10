@@ -16,6 +16,8 @@ import Home from "./componants/state_lifting_principle/Home";
 import Formik from "./componants/formik_package/Formik";
 import YupFormik from "./componants/formik_package/YupFormik";
 import Toggle from "./componants/toggle/Toggle";
+import UseEffect from "./componants/useEffect/UseEffect";
+import FetchingData from "./componants/useEffect/FetchingData";
 
 function App() {
   const receivedData = (chidData) => {
@@ -38,7 +40,9 @@ function App() {
       {/* <Home /> */}
       {/* <Formik /> */}
       {/* <YupFormik /> */}
-      <Toggle />
+      {/* <Toggle /> */}
+      {/* <UseEffect /> */}
+      <FetchingData />
     </div>
   );
 }
